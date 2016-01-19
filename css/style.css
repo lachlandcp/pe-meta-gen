@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", "Oxygen Sans", "Open Sans", sans-serif;
+}
+
+.tile {
+    width: 32px;
+    height: 32px;
+    display: block;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.tile-parent {
+    background-image: url('../img/opacity.gif');
+    display: inline-block;
+}
+
+.tile,
+.tile-parent {
+    padding: 0;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    padding: 5px;
+}
+
+#name_selector {
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+#custom_name {
+    display: none;
+}
+
+#submit_container {
+    display: none;
+}
+
+#result {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#result textarea {
+    font-family: monospace;
+    width: 100%;
+}
