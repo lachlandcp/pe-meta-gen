@@ -51,7 +51,7 @@ $("#table").on('click', ".tile-select", function (e) {
 
     var o = $(this).offset();
     var top = o.top + 'px';
-    var left = o.left + $(elem).closest("td").width() + 'px';
+    var left = o.left + $(this).closest("td").width() + 'px';
 
     $("#name_selector").prop('defaultSelected');
     $("#name_selector").css("top", top).css("left", left).show();
@@ -236,7 +236,7 @@ function getUv(col, row) {
     col = Number(col);
     row = Number(row);
 
-    /* 
+    /*
         [x1, y1, x2, y2, width, height]
         x1 = col * 16 / width
         y1 = row * 16 / height
