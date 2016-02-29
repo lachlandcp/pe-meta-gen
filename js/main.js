@@ -244,11 +244,15 @@ function getUv(col, row) {
         y2 = 16(row + 1) / height
     */
 
-    var uv = [
+    var uv = [/*
         (tile_size * col) / image.width,
         (tile_size * row) / image.height,
         (tile_size * (col + 1)) / image.width,
-        (tile_size * (row + 1)) / image.height,
+        (tile_size * (row + 1)) / image.height,*/
+		(tile_size * col),
+        (tile_size * row),
+        (tile_size * (col + 1)),
+        (tile_size * (row + 1)),
         image.width,
         image.height
         ];
